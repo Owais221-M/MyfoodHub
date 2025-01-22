@@ -1,0 +1,135 @@
+/* ======= HOMEPAGE STYLES ======= */
+
+/* Hero Section */
+.hero {
+    background: url('../images/background.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-hero {
+    padding: 0.8rem 2rem;
+    background-color: #ff4351;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-hero:hover {
+    background-color: #e1303e;
+}
+
+/* Featured Restaurants Section */
+.featured-restaurants {
+    padding: 3rem 0;
+    background-color: #fff;
+}
+
+.featured-restaurants h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ff4351;
+    font-size: 2rem;
+}
+
+.restaurant-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.restaurant-cards .card {
+    background-color: #fafafa;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.restaurant-cards .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.restaurant-cards .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.restaurant-cards .card h3 {
+    margin: 1rem;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.restaurant-cards .card p {
+    margin: 0 1rem 1rem 1rem;
+    color: #666;
+    font-size: 1rem;
+}
+
+.restaurant-cards .card .btn-view {
+    margin: 0 1rem 1rem 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        height: 40vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .restaurant-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .restaurant-cards .card {
+        width: 90%; /* Adjust card width for smaller screens */
+    }
+
+    .restaurant-cards .card img {
+        height: 200px;
+    }
+}

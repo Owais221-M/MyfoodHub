@@ -1,0 +1,113 @@
+/* ======= SINGLE RESTAURANT PAGE STYLES ======= */
+
+.restaurant-details {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.restaurant-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #fff;
+    padding: 2rem;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.restaurant-info {
+    flex: 2;
+    min-width: 250px;
+}
+
+.restaurant-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ff4351;
+}
+
+.restaurant-info p {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.menu-section {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #ff4351;
+    font-size: 2rem;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.menu-item {
+    background-color: #fafafa;
+    padding: 1rem;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.menu-info h3 {
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-size: 1.3rem;
+}
+
+.menu-info p {
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.menu-info .price {
+    font-size: 1.1rem;
+    color: #ff4351;
+    margin-bottom: 0.5rem;
+}
+
+.btn-add {
+    padding: 0.5rem 1rem;
+    background-color: #ff4351;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.btn-add:hover {
+    background-color: #e1303e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .restaurant-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-items {
+        grid-template-columns: 1fr;
+    }
+}

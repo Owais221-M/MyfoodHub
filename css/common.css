@@ -1,0 +1,121 @@
+/* ======= GLOBAL STYLES ======= */
+
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ======= HEADER STYLES ======= */
+.main-header {
+    background-color: #ff4351;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-header .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    color: #e0e0e0;
+}
+
+/* ======= FOOTER STYLES ======= */
+.main-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.main-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* ======= BUTTON STYLES ======= */
+.btn-view,
+.btn-add,
+.btn-add-item,
+.btn-delete,
+.btn-hero {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: #ff4351;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 0.9rem;
+}
+
+.btn-view:hover,
+.btn-add:hover,
+.btn-add-item:hover,
+.btn-delete:hover,
+.btn-hero:hover {
+    background-color: #e1303e;
+    transform: scale(1.05);
+}
+
+/* ======= CONTAINER STYLES ======= */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ======= IMAGE STYLES ======= */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ======= UTILITY CLASSES ======= */
+.text-center {
+    text-align: center;
+}
+
+.mt-1 { margin-top: 1rem; }
+.mt-2 { margin-top: 2rem; }
+.mt-3 { margin-top: 3rem; }
+
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+.mb-3 { margin-bottom: 3rem; }

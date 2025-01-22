@@ -1,0 +1,84 @@
+/* ======= RESTAURANTS LISTING PAGE STYLES ======= */
+
+.restaurants-container {
+  padding: 3rem 0;
+  background-color: #f9f9f9;
+}
+
+.restaurants-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ff4351;
+  font-size: 2rem;
+}
+
+.restaurant-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.restaurant-item {
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1rem;
+  text-align: center;
+}
+
+.restaurant-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.restaurant-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.restaurant-info {
+  padding: 1rem 0;
+}
+
+.restaurant-info h3 {
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.restaurant-info p {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.btn-view {
+  padding: 0.5rem 1rem;
+  background-color: #ff4351;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.btn-view:hover {
+  background-color: #e1303e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .restaurant-list {
+      grid-template-columns: 1fr;
+  }
+
+  .restaurant-item img {
+      height: 200px;
+  }
+}
