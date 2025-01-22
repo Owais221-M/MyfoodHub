@@ -122,8 +122,3 @@ The database design follows standard relational modeling principles. The key rel
 
 ## Conclusion
 The **MyFoodHub** project showcases the application of database design principles in building a secure and functional food ordering system. By methodically addressing challenges and implementing scalable solutions, the project delivers an intuitive platform that meets the needs of both customers and restaurant owners. This work highlights the importance of robust database management and effective backend integration in modern web applications.
-
----
-
-## Author
-**Mohammad Owais**
