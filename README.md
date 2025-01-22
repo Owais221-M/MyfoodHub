@@ -77,7 +77,7 @@ The database design follows standard relational modeling principles. The key rel
 2. **Establishing Relationships**:  
    - Created foreign key constraints to link related tables:
      - `users ↔ restaurants`: A restaurant is owned by a user.
-     - `restaurants ↔ menu_items`: Menu items are associated with specific restaurants.
+     - `restaurants ↔ MenuItems`: Menu items are associated with specific restaurants.
      - `users ↔ orders`: Connects users to their orders.
      - `orders ↔ order_items`: Each order contains multiple items.
 
